@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Ubuntu;
+    grid-template-areas:
+            "cabecalho"
+            "conteudo"
+            "rodape";
+    grid-template-columns: 15% 70% 15% ;
+
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+    grid-column: 2 / 2;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.conteudo .title{
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+
+    color: #7D0C12;
+}
+
+.conteudo .subtitle{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.conteudo .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+
+    background: #7D0C12;
+    box-shadow: 0px 12px 10px -8px rgba(125, 12, 18, 0.3);
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+.rodape {
+    grid-area: rodape;
+}
